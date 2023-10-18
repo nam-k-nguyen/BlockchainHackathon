@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "SweatToken": {
+      "address": "0xB7330ed4f2c371C60645f328eAD9F8aC755C6660",
+      "startBlock": 0
+    }
+  }
+}

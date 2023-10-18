@@ -1,0 +1,27 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: SweatToken
+    network: sepolia
+    source:
+      address: "0xB7330ed4f2c371C60645f328eAD9F8aC755C6660"
+      abi: SweatToken
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - PriceUpdate
+        - Transfer
+      abis:
+        - name: SweatToken
+          file: SweatToken\abis\SweatToken.json
+      eventHandlers:
+        - event: PriceUpdate(uint256)
+          handler: handlePriceUpdate
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: SweatToken\SweatToken.wasm
