@@ -7,7 +7,7 @@ export default function Home() {
       <div className={styles.description}>
         <p>
           <a href="https://github.com/nam-k-nguyen/BlockchainHackathon" target="_blank">
-            Hello guys it's me Nam :D. Click for GitHub ↗
+            Hello guys it&apos;s me Nam 🤓. Click for GitHub ↗.
           </a>
         </p>
         <div>
