@@ -6,8 +6,9 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
+          <a href="https://github.com/nam-k-nguyen/BlockchainHackathon" target="_blank">
+            Hello guys it's me Nam 🤓. Click for GitHub ↗
+          </a>
         </p>
         <div>
           <a
